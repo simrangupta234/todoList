@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(229, 209, 247);
+  height: 100vh;
+}
+.center {
+  margin-top: 70px;
+  height: 500px;
+  width: 600px;
+  border-radius: 4px;
+  background-color: rgb(208, 166, 248);
+  box-shadow: 0 0 80px white;
+}
+
+.input {
+  width: 72%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.addbutton {
+  background-color: rgb(17, 17, 17);
+  color: white;
+  height: 40px;
+  outline: none;
+  border: none;
+  width: 15%;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.addbutton:hover {
+  box-shadow: 0 0 80px white;
+}
+
+ol {
+  text-align: left;
+}
+li {
+  list-style-type: none;
+}
+.inputItemsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.inputItems {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: white;
+  margin-top: 10px;
+  padding: 5px;
+  width: 90%;
+  border-radius: 4px;
+}
+
+.deleteIcon {
+  align-self: flex-end;
+  margin: 2px;
+  transition: transform 0.2s;
+}
+.deleteIcon:hover {
+  color: red;
+  transform: scale(1.1);
+}
+.inputItem {
+  margin: 0;
+}
+
+.inputItems li {
+  padding-left: 4px;
+  margin-left: 4px;
+}
+.checkbox:checked + .inputItem {
+  text-decoration: line-through;
+}
+
+.dropdown {
+  position: relative;
+  width: 200px;
+  height: 30px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.dropdown select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
